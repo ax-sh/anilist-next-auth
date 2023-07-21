@@ -1,9 +1,10 @@
 import { OAuthConfig, OAuthUserConfig } from 'next-auth/providers';
 
 export type AnilistProfile = Record<string, object>;
-
+export type AnilistProviderOptions<P> = OAuthUserConfig<P> &
+  Required<Pick<OAuthConfig<P>, 'userinfo' | 'profile'>>;
 export function AnilistProvider<P extends AnilistProfile>(
-  options: OAuthUserConfig<P>
+  options: AnilistProviderOptions<P>
 ): OAuthConfig<P> {
   return {
     id: 'anilist',
@@ -26,7 +27,6 @@ export function AnilistProvider<P extends AnilistProfile>(
       params: {},
     },
     userinfo: options.userinfo,
-    // @ts-ignore
     profile: options.profile,
     clientId: options.clientId,
     clientSecret: options.clientSecret,
