@@ -17,7 +17,6 @@ export function AnilistProvider<P extends AnilistProfile>(
       url: 'https://anilist.co/api/v2/oauth/authorize',
       params: {
         scope: '',
-
         response_type: 'code',
         client_id: options.clientId,
       },
