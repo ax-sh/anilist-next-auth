@@ -1,6 +1,6 @@
 import { UserinfoEndpointHandler } from 'next-auth/providers/oauth';
 import { Awaitable, TokenSet, User } from 'next-auth';
-import { AnilistProfile, AnilistProvider } from '../src/index';
+import { AnilistProfile, AnilistProvider } from './';
 
 describe('anilist-provider', () => {
   const provider = AnilistProvider({
