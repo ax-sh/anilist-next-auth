@@ -1,4 +1,5 @@
 import { OAuthConfig, OAuthUserConfig } from 'next-auth/providers';
+import { Awaitable, User } from 'next-auth';
 // import { Awaitable, TokenSet, User } from 'next-auth';
 
 export interface AnilistUser {
@@ -21,8 +22,16 @@ export type AnilistProviderOptions<P> = OAuthUserConfig<P> &
 export function AnilistProvider<P extends AnilistProfile>(
   options: AnilistProviderOptions<P>
 ): OAuthConfig<P> {
+  const profile = options.profile
+    ? options.profile
+    : (profile: P): Awaitable<User> => {
+        return {
+          id: `${profile.id}`,
+          image: profile.avatar.large,
+          name: profile.name,
+        };
+      };
   return {
-    options: undefined,
     id: 'anilist',
     name: 'Anilist',
     type: 'oauth',
@@ -43,7 +52,9 @@ export function AnilistProvider<P extends AnilistProfile>(
       params: {},
     },
     userinfo: options.userinfo,
-    profile: options.profile,
+    clientId: options.clientId,
+    clientSecret: options.clientSecret,
+    profile,
     // profile(profile: P, tokens: TokenSet): Awaitable<User> {
     //   return {
     //     email: undefined,
@@ -52,7 +63,5 @@ export function AnilistProvider<P extends AnilistProfile>(
     //     name: profile.name,
     //   };
     // },
-    clientId: options.clientId,
-    clientSecret: options.clientSecret,
   };
 }
