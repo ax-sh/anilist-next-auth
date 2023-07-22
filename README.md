@@ -13,8 +13,8 @@ pnpm
 ```
 
 
-
-> If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
+[//]: # ()
+[//]: # (> If you’re new to TypeScript and React, checkout [this handy cheatsheet]&#40;https://github.com/sw-yx/react-typescript-cheatsheet/&#41;)
 
 [//]: # ()
 [//]: # (## Commands)
