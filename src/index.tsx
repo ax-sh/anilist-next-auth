@@ -22,8 +22,8 @@ export type AnilistProviderOptions<P> = OAuthUserConfig<P> &
 export function AnilistProvider<P extends AnilistProfile>(
   options: AnilistProviderOptions<P>
 ): OAuthConfig<P> {
-  const profile = options.profile
-    ? options.profile
+  const profile = Boolean(options.profile)
+    ? options.profile!
     : (profile: P): Awaitable<User> => {
         return {
           id: `${profile.id}`,
