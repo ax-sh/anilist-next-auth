@@ -17,7 +17,7 @@ export interface AnilistUser {
 
 export type AnilistProfile = AnilistUser;
 export type AnilistProviderOptions<P> = OAuthUserConfig<P> &
-  Required<Pick<OAuthConfig<P>, 'userinfo' | 'profile'>>;
+  Required<Pick<OAuthConfig<P>, 'userinfo'>>;
 
 export function AnilistProvider<P extends AnilistProfile>(
   options: AnilistProviderOptions<P>
