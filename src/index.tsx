@@ -23,14 +23,6 @@ export function AnilistProvider<P extends AnilistProfile>(
 ): OAuthConfig<P> {
   return {
     options: undefined,
-    // profile(profile: P, tokens: TokenSet): Awaitable<User> {
-    //   return {
-    //     email: undefined,
-    //     id: `${profile.id}`,
-    //     image: profile.avatar.large,
-    //     name: profile.name,
-    //   };
-    // },
     id: 'anilist',
     name: 'Anilist',
     type: 'oauth',
@@ -52,6 +44,14 @@ export function AnilistProvider<P extends AnilistProfile>(
     },
     userinfo: options.userinfo,
     profile: options.profile,
+    // profile(profile: P, tokens: TokenSet): Awaitable<User> {
+    //   return {
+    //     email: undefined,
+    //     id: `${profile.id}`,
+    //     image: profile.avatar.large,
+    //     name: profile.name,
+    //   };
+    // },
     clientId: options.clientId,
     clientSecret: options.clientSecret,
   };
