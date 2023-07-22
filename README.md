@@ -2,6 +2,11 @@
 
 # Install Using 
 
+Anilist GraphQL 
+```ts
+// https://anilist.co/graphiql
+ ```
+
 npm
 ```shell
    npm i https://github.com/ax-sh/anilist-next-auth
