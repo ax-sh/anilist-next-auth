@@ -1,6 +1,9 @@
 {
 	"private": false,
 	"name": "@ax-sh/anilist-next-auth",
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.cts",
