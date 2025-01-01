@@ -45,7 +45,6 @@ module.exports = {
       'git commit --allow-empty -am "ci: format files before release"',
     ],
     "before:beforeBump": [
-
       "echo \uD83D\uDC4A ${name} before:bump latestVersion=v${version} previousVersion=v${latestVersion}",
     ],
     "after:bump": [
