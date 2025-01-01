@@ -40,5 +40,5 @@
 		"release": "dotenv -v DEBUG=1 release-it -- minor --ci",
 		"changelog:latest": "nr git-cliff -l"
 	},
-	"version": "0.4.0"
+	"version": "0.5.0"
 }
