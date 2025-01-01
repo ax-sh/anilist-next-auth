@@ -1,57 +1,55 @@
 {
-	"private": false,
-	"name": "@ax-sh/anilist-next-auth",
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	},
-	"main": "./dist/index.cjs",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.cts",
-	"files": [
-		"dist"
-	],
-	"exports": {
-		"require": {
-			"types": "./dist/index.d.cts",
-			"default": "./dist/index.cjs"
-		},
-		"import": {
-			"types": "./dist/index.d.mts",
-			"default": "./dist/index.mjs"
-		}
-	},
-	"type": "module",
-	"devDependencies": {
-		"@biomejs/biome": "^1.9.4",
-		"@release-it/conventional-changelog": "^9.0.4",
-		"@types/bun": "latest",
-		"dotenv-cli": "^8.0.0",
-		"git-cliff": "^2.7.0",
-		"is-ci": "^4.1.0",
-		"pkgroll": "^2.6.0",
-		"release-it": "^17.11.0",
-		"rimraf": "^6.0.1"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"dependencies": {
-		"@auth/core": "^0.37.4",
-		"next-auth": "^5.0.0-beta.25"
-	},
-	"scripts": {
-		"format": "nlx @biomejs/biome format --write ./",
-		"test": "bun test",
-		"test:watch": "bun test --watch",
-		"release": "dotenv -v DEBUG=1 release-it -- minor --ci",
-		"cl:latest": "nr git-cliff -l",
-		"clean": "rimraf dist",
-		"build": "pkgroll --minify",
-		"build:watch": "pkgroll --watch",
-		"lint": "tsc --noEmit",
-		"prepublishOnly": "nr clean && nr build",
-		"pub": "nr prepublishOnly && npm publish --scope=@ax-sh --registry=https://npm.pkg.github.com",
-		"pub:dry": "nr pub --dry-run"
-	},
-	"version": "0.7.0"
+  "private": false,
+  "name": "@ax-sh/anilist-next-auth",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": ["dist"],
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@release-it/conventional-changelog": "^9.0.4",
+    "@types/bun": "latest",
+    "dotenv-cli": "^8.0.0",
+    "git-cliff": "^2.7.0",
+    "is-ci": "^4.1.0",
+    "pkgroll": "^2.6.0",
+    "release-it": "^17.11.0",
+    "rimraf": "^6.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@auth/core": "^0.37.4",
+    "next-auth": "^5.0.0-beta.25"
+  },
+  "scripts": {
+    "format": "nlx @biomejs/biome format --write ./",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "release": "dotenv -v DEBUG=1 release-it -- minor --ci",
+    "cl:latest": "nr git-cliff -l",
+    "clean": "rimraf dist",
+    "build": "pkgroll --minify",
+    "build:watch": "pkgroll --watch",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "nr clean && nr build",
+    "pub": "nr prepublishOnly && npm publish --scope=@ax-sh --registry=https://npm.pkg.github.com",
+    "pub:dry": "nr pub --dry-run"
+  },
+  "version": "0.7.0"
 }
