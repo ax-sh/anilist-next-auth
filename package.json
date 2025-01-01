@@ -39,9 +39,13 @@
 		"test:watch": "bun test --watch",
 		"release": "dotenv -v DEBUG=1 release-it -- minor --ci",
 		"cl:latest": "nr git-cliff -l",
+		"clean": "rimraf dist",
 		"build": "pkgroll --minify",
 		"build:watch": "pkgroll --watch",
-		"lint": "tsc --noEmit"
+		"lint": "tsc --noEmit",
+		"prepublishOnly": "nr clean && nr build",
+		"pub": "nr prepublishOnly && npm publish --scope=@ax-sh --registry=https://npm.pkg.github.com",
+		"pub:dry": "nr pub --dry-run"
 	},
 	"version": "0.7.0"
 }
