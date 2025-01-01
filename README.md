@@ -1,11 +1,12 @@
 # anilist-next-auth
 #### Provider that can be used with next auth
 
-To install dependencies:
+#### Anilist GraphQL Api Console
 
-```bash
-bun install
+```md
+https://anilist.co/graphiql
 ```
+
 
 To run:
 
@@ -17,4 +18,5 @@ bun run index.ts
 ```shell
 bun install @ax-sh/anilist-next-auth@0.8.0
 ni @ax-sh/anilist-next-auth
+ni https://github.com/ax-sh/anilist-next-auth
 ```
