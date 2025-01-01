@@ -43,5 +43,5 @@
 		"build:watch": "pkgroll --watch",
 		"lint": "tsc --noEmit"
 	},
-	"version": "0.6.0"
+	"version": "0.7.0"
 }

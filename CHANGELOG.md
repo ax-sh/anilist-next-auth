@@ -6,15 +6,27 @@ All notable changes to this project will be documented in this file.
 
 ### 🚀 Features
 
+- Add default configuration for git-cliff
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+- Update version to 0.6.0 in package.json
+- Format files before release
+
+### Build
+
+- Update dependencies and improve build scripts
+
+## [0.5.0] - 2025-01-01
+
+### 🚀 Features
+
 - Add initial project setup with Anilist provider
 - Add AnilistProvider and related API functionality
 - Add authentication endpoints for Anilist provider
 - *(anilist-provider)* Implement user profile retrieval logic
 - Add watch option to test script in package.json
-
-### 💼 Other
-
-- Update package.json for module exports and scripts
 
 ### 🚜 Refactor
 
@@ -33,6 +45,11 @@ All notable changes to this project will be documented in this file.
 - Remove linting from pre-release steps
 - Format files before release
 - Format files before release
+- Add CHANGELOG
+
+### Build
+
+- Update package.json for module exports and scripts
 
 ## [0.3.2] - 2023-07-22
 
