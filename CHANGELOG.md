@@ -4,6 +4,24 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🎨 Styling
+
+- *(biome.json)* Update indent style to spaces
+
+### ⚙️ Miscellaneous Tasks
+
+- Rename package to @ax-sh/anilist-next-auth
+- Set package as public in package.json
+- Format files before release
+
+### Build
+
+- Add npm scripts for clean and publishing
+- *(package.json)* Add files field for distribution folder
+- Add GitHub npm registry to publish config
+
+## [0.7.0] - 2025-01-01
+
 ### 🚀 Features
 
 - Add default configuration for git-cliff
@@ -13,6 +31,7 @@ All notable changes to this project will be documented in this file.
 - Format files before release
 - Update version to 0.6.0 in package.json
 - Format files before release
+- Add CHANGELOG
 
 ### Build
 
