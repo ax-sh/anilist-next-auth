@@ -26,8 +26,13 @@ export default function AnilistProvider<P extends AnilistProfile>({
 		name: "Anilist",
 		// customFetch: undefined,
 		userinfo,
-		profile<P>(profile: P, tokens: TokenSet): Awaitable<User> {
-			return {};
+		profile(profile, tokens): Awaitable<User> {
+			return {
+				email: undefined,
+				id: `${profile.id}`,
+				image: profile.avatar.large,
+				name: profile.name,
+			};
 		},
 		authorization: {
 			url: ANILIST_AUTH_ENDPOINT,
