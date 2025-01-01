@@ -2,9 +2,10 @@
 // requestTokenUrl: "https://anilist.co/api/v2/oauth/token",
 // authorization: "https://anilist.co/api/v2/oauth/authorize",
 import type { AnilistProfile } from "./types.ts";
+import {GRAPH_API_ENDPOINT} from "./constant.ts";
 
 export async function fetchUserProfile(access_token: string) {
-	const url = "https://graphql.anilist.co/";
+	const url = GRAPH_API_ENDPOINT;
 	const query = `
     query AnilistUserProfileQuery {
                   Viewer {

@@ -1,5 +1,5 @@
 import { expect, describe, it } from "bun:test";
-import { AnilistProvider } from "./anilist-provider.ts";
+import AnilistProvider from "./anilist-provider.ts";
 
 describe("Test Anilist NEXT-AUTH Provider", () => {
 	it("should check", () => {

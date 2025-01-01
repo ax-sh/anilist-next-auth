@@ -1,7 +1,19 @@
 {
   "private": true,
   "name": "anilist-next-auth",
-  "module": "index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
@@ -17,6 +29,7 @@
   },
   "scripts": {
     "format": "nlx @biomejs/biome format --write ./src",
-    "test": "bun test"
+    "test": "bun test",
+    "build": "pkgroll"
   }
 }

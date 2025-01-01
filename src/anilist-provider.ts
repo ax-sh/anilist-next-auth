@@ -14,7 +14,7 @@ const userinfo: UserinfoEndpointHandler = {
 	},
 };
 
-export function AnilistProvider<P extends AnilistProfile>({
+export default function AnilistProvider<P extends AnilistProfile>({
 	clientSecret,
 	clientId,
 	...options
