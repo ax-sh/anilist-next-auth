@@ -46,6 +46,7 @@ module.exports = {
 			"nr lint",
 		],
 		"before:beforeBump": [
+			"jq --arg version \"$(nr git-cliff --bumped-version)\" '.version = $version' package.json > package.tmp.json && mv package.tmp.json package.json && nr format\n",
 			"echo \uD83D\uDC4A ${name} before:bump latestVersion=v${version} previousVersion=v${latestVersion}",
 		],
 		"after:bump": [
