@@ -30,6 +30,7 @@
   "scripts": {
     "format": "nlx @biomejs/biome format --write ./src",
     "test": "bun test",
+    "test:watch": "bun test --watch",
     "build": "pkgroll"
   }
 }
