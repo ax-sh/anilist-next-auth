@@ -4,6 +4,7 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest",
     "pkgroll": "^2.6.0"
   },
@@ -13,5 +14,9 @@
   "dependencies": {
     "@auth/core": "^0.37.4",
     "next-auth": "^5.0.0-beta.25"
+  },
+  "scripts": {
+    "format": "nlx @biomejs/biome format --write ./src",
+    "test": "bun test"
   }
 }

@@ -1,11 +1,9 @@
-import { expect, test,  describe, it} from "bun:test";
+import { expect, describe, it } from "bun:test";
+import { AnilistProvider } from "./anilist-provider.ts";
 
-test("2 + 2", () => {
-    expect(2 + 2).toBe(4);
+describe("Test Anilist NEXT-AUTH Provider", () => {
+	it("should check", () => {
+		const provider = AnilistProvider({});
+		expect(provider).toBeDefined();
+	});
 });
-
-describe("Test Anilist NEXT-AUTH Provider", ()=>{
-    it('should check', () => {
-
-    });
-})
