@@ -37,7 +37,7 @@
 		"test": "bun test",
 		"test:watch": "bun test --watch",
 		"build": "pkgroll",
-		"release": "dotenv -v DEBUG=1 release-it -- minor --no-git.push --no-git.requireUpstream --ci",
+		"release": "dotenv -v DEBUG=1 release-it -- minor --ci",
 		"changelog:latest": "nr git-cliff -l"
 	}
 }
