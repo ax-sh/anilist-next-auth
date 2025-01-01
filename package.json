@@ -23,7 +23,8 @@
 		"git-cliff": "^2.7.0",
 		"is-ci": "^4.1.0",
 		"pkgroll": "^2.6.0",
-		"release-it": "^17.11.0"
+		"release-it": "^17.11.0",
+		"rimraf": "^6.0.1"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
@@ -36,9 +37,11 @@
 		"format": "nlx @biomejs/biome format --write ./",
 		"test": "bun test",
 		"test:watch": "bun test --watch",
-		"build": "pkgroll",
 		"release": "dotenv -v DEBUG=1 release-it -- minor --ci",
-		"changelog:latest": "nr git-cliff -l"
+		"cl:latest": "nr git-cliff -l",
+		"build": "pkgroll --minify",
+		"build:watch": "pkgroll --watch",
+		"lint": "tsc --noEmit"
 	},
 	"version": "0.5.0"
 }
