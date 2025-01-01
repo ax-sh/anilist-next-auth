@@ -33,11 +33,12 @@
 		"next-auth": "^5.0.0-beta.25"
 	},
 	"scripts": {
-		"format": "nlx @biomejs/biome format --write ./src",
+		"format": "nlx @biomejs/biome format --write ./",
 		"test": "bun test",
 		"test:watch": "bun test --watch",
 		"build": "pkgroll",
 		"release": "dotenv -v DEBUG=1 release-it -- minor --ci",
 		"changelog:latest": "nr git-cliff -l"
-	}
+	},
+	"version": "0.4.0"
 }
