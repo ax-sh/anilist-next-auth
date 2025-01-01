@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"name": "anilist-next-auth",
+	"name": "@ax-sh/anilist-next-auth",
 	"main": "./dist/index.cjs",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.cts",
