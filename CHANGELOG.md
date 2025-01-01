@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### ⚙️ Miscellaneous Tasks
+
+- Update release script and add installation instructions
+- Format files before release
+
+## [0.8.0] - 2025-01-01
+
 ### 🎨 Styling
 
 - *(biome.json)* Update indent style to spaces
@@ -13,6 +20,7 @@ All notable changes to this project will be documented in this file.
 - Rename package to @ax-sh/anilist-next-auth
 - Set package as public in package.json
 - Format files before release
+- Add CHANGELOG
 
 ### Build
 
