@@ -6,6 +6,7 @@ import type {
 import type { AnilistProfile } from "./types.ts";
 import type { Awaitable, TokenSet, User } from "@auth/core/types";
 import { fetchUserProfile } from "./api.ts";
+import { ANILIST_AUTH_ENDPOINT, ANILIST_TOKEN_ENDPOINT } from "./constant.ts";
 
 const userinfo: UserinfoEndpointHandler = {
 	async request({ tokens }: { tokens: TokenSet }) {
@@ -28,6 +29,15 @@ export default function AnilistProvider<P extends AnilistProfile>({
 		profile<P>(profile: P, tokens: TokenSet): Awaitable<User> {
 			return {};
 		},
+		authorization: {
+			url: ANILIST_AUTH_ENDPOINT,
+			params: {
+				scope: "",
+				response_type: "code",
+				client_id: clientId,
+			},
+		},
+		token: ANILIST_TOKEN_ENDPOINT,
 		options,
 	};
 	return config;
