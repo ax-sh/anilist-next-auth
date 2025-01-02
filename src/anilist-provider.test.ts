@@ -10,9 +10,8 @@ describe("Test Anilist NEXT-AUTH Provider", () => {
       clientSecret: "22",
       id: "anilist",
       name: "Anilist",
+      type: "oauth",
     };
-    expect(provider).toHaveProperty("clientId", "11");
-    expect(provider).toHaveProperty("clientSecret", "22");
-    expect(provider).toMatchObject(expect.objectContaining(out));
+    expect(provider).toMatchObject(out);
   });
 });

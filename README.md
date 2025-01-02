@@ -7,13 +7,6 @@
 https://anilist.co/graphiql
 ```
 
-
-To run:
-
-```bash
-bun run index.ts
-```
-
 # Install
 ```shell
 bun install @ax-sh/anilist-next-auth@0.8.0
