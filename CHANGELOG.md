@@ -4,10 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🐛 Bug Fixes
+
+- *(anilist-provider)* Set correct URL for userinfo endpoint
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.16.0] - 2025-01-02
+
 ### ⚙️ Miscellaneous Tasks
 
 - Update package.json and improve test structure
 - Format files before release
+- Add CHANGELOG
 
 ## [0.15.0] - 2025-01-02
 
