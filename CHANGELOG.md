@@ -6,8 +6,16 @@ All notable changes to this project will be documented in this file.
 
 ### ⚙️ Miscellaneous Tasks
 
+- Add comment to ignore lint warning for tokens
+- Format files before release
+
+## [0.11.0] - 2025-01-02
+
+### ⚙️ Miscellaneous Tasks
+
 - Update README and configuration files
 - Format files before release
+- Add CHANGELOG
 
 ## [0.10.0] - 2025-01-02
 
