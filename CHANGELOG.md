@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### ⚙️ Miscellaneous Tasks
+
+- Update README and configuration files
+- Format files before release
+
+## [0.10.0] - 2025-01-02
+
 ### 🚀 Features
 
 - Add MakeKeysRequired type
@@ -20,6 +27,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Format files before release
+- Add CHANGELOG
 
 ## [0.9.0] - 2025-01-01
 
