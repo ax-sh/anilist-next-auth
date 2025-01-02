@@ -28,6 +28,7 @@ export default function AnilistProvider<P extends AnilistProfile>({
     clientSecret,
     // customFetch: undefined,
     userinfo,
+    // biome-ignore lint/correctness/noUnusedVariables: keeping tokens as is for future reference
     profile(profile, tokens): Awaitable<User> {
       return {
         email: undefined,
