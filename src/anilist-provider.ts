@@ -24,6 +24,8 @@ export default function AnilistProvider<P extends AnilistProfile>({
     type: "oauth",
     id: "anilist",
     name: "Anilist",
+    clientId,
+    clientSecret,
     // customFetch: undefined,
     userinfo,
     // biome-ignore lint/correctness/noUnusedVariables: <explanation>
