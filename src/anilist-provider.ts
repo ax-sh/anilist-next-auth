@@ -9,11 +9,11 @@ import { fetchUserProfile } from "./api.ts";
 import { ANILIST_AUTH_ENDPOINT, ANILIST_TOKEN_ENDPOINT } from "./constant.ts";
 
 const userinfo: UserinfoEndpointHandler = {
+  url: "https://graphql.anilist.co/",
   async request({ tokens }: { tokens: TokenSet }) {
     const { access_token } = tokens;
     return await fetchUserProfile(access_token as string);
   },
-  url: "",
 };
 
 export default function AnilistProvider<P extends AnilistProfile>({
@@ -46,7 +46,6 @@ export default function AnilistProvider<P extends AnilistProfile>({
         client_id: clientId,
       },
     },
-    issuer: " ",
     token: ANILIST_TOKEN_ENDPOINT,
   };
   return config;
