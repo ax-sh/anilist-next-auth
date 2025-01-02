@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🐛 Bug Fixes
+
+- *(anilist-provider)* Add missing issuer field in config
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.14.0] - 2025-01-02
+
 ### 🚜 Refactor
 
 - Remove spread operator from config options
@@ -11,6 +21,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Format files before release
+- Add CHANGELOG
 
 ## [0.13.0] - 2025-01-02
 
