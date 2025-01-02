@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚀 Features
+
+- Add styling options for Anilist provider
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.17.0] - 2025-01-02
+
 ### 🐛 Bug Fixes
 
 - *(anilist-provider)* Set correct URL for userinfo endpoint
@@ -11,6 +21,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Format files before release
+- Add CHANGELOG
 
 ## [0.16.0] - 2025-01-02
 
