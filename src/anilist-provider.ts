@@ -3,7 +3,7 @@ import type {
   OAuthUserConfig,
   UserinfoEndpointHandler,
 } from "@auth/core/providers";
-import type { AnilistProfile } from "./types.ts";
+import type { AnilistProfile, MakeKeysRequired } from "./types.ts";
 import type { Awaitable, TokenSet, User } from "@auth/core/types";
 import { fetchUserProfile } from "./api.ts";
 import { ANILIST_AUTH_ENDPOINT, ANILIST_TOKEN_ENDPOINT } from "./constant.ts";
@@ -19,13 +19,14 @@ export default function AnilistProvider<P extends AnilistProfile>({
   clientSecret,
   clientId,
   ...options
-}: OAuthUserConfig<P>) {
+}: MakeKeysRequired<OAuthUserConfig<P>, "clientId" | "clientSecret">) {
   const config: OAuth2Config<P> = {
     type: "oauth",
     id: "anilist",
     name: "Anilist",
     // customFetch: undefined,
     userinfo,
+    // biome-ignore lint/correctness/noUnusedVariables: <explanation>
     profile(profile, tokens): Awaitable<User> {
       return {
         email: undefined,
