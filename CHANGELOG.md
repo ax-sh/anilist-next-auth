@@ -4,10 +4,30 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚀 Features
+
+- Add MakeKeysRequired type
+
+### 📚 Documentation
+
+- Update README with new API console link
+
+### 🧪 Testing
+
+- *(anilist-provider)* Add tests for AnilistProvider config
+- *(anilist-provider)* Improve test for provider config validation
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.9.0] - 2025-01-01
+
 ### ⚙️ Miscellaneous Tasks
 
 - Update release script and add installation instructions
 - Format files before release
+- Add CHANGELOG
 
 ## [0.8.0] - 2025-01-01
 
