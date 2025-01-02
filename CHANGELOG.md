@@ -6,11 +6,22 @@ All notable changes to this project will be documented in this file.
 
 ### 🚜 Refactor
 
+- Remove spread operator from config options
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.13.0] - 2025-01-02
+
+### 🚜 Refactor
+
 - *(anilist-provider)* Spread options in config object
 
 ### ⚙️ Miscellaneous Tasks
 
 - Format files before release
+- Add CHANGELOG
 
 ## [0.12.0] - 2025-01-02
 
