@@ -4,10 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚜 Refactor
+
+- Simplify fetchUserProfile with constant query
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.19.0] - 2025-01-02
+
 ### ⚙️ Miscellaneous Tasks
 
 - *(package.json)* Update version and license information
 - Format files before release
+- Add CHANGELOG
 
 ## [0.18.0] - 2025-01-02
 
