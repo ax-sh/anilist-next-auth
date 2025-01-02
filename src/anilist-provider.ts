@@ -45,6 +45,7 @@ export default function AnilistProvider<P extends AnilistProfile>({
         client_id: clientId,
       },
     },
+    issuer:"",
     token: ANILIST_TOKEN_ENDPOINT,
   };
   return config;
