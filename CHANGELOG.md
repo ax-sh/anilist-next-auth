@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### ⚙️ Miscellaneous Tasks
+
+- *(package.json)* Update version and license information
+- Format files before release
+
+## [0.18.0] - 2025-01-02
+
 ### 🚀 Features
 
 - Add styling options for Anilist provider
@@ -11,6 +18,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Format files before release
+- Add CHANGELOG
 
 ## [0.17.0] - 2025-01-02
 

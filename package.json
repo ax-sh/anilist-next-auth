@@ -1,6 +1,6 @@
 {
   "name": "@ax-sh/anilist-next-auth",
-  "version": "0.18.0",
+  "version": "0.19.0",
   "private": false,
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -8,7 +8,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     "require": {
       "types": "./dist/index.d.cts",
@@ -52,6 +54,5 @@
     "pub": "nr prepublishOnly && npm publish --scope=@ax-sh --registry=https://npm.pkg.github.com",
     "pub:dry": "nr pub --dry-run"
   },
-
   "license": "MIT"
 }
