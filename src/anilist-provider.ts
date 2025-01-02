@@ -6,10 +6,14 @@ import type {
 import type { AnilistProfile, MakeKeysRequired } from "./types.ts";
 import type { Awaitable, TokenSet, User } from "@auth/core/types";
 import { fetchUserProfile } from "./api.ts";
-import { ANILIST_AUTH_ENDPOINT, ANILIST_TOKEN_ENDPOINT } from "./constant.ts";
+import {
+  ANILIST_AUTH_ENDPOINT,
+  ANILIST_GRAPH_API_ENDPOINT,
+  ANILIST_TOKEN_ENDPOINT,
+} from "./constant.ts";
 
 const userinfo: UserinfoEndpointHandler = {
-  url: "https://graphql.anilist.co/",
+  url: ANILIST_GRAPH_API_ENDPOINT,
   async request({ tokens }: { tokens: TokenSet }) {
     const { access_token } = tokens;
     return await fetchUserProfile(access_token as string);
@@ -47,6 +51,10 @@ export default function AnilistProvider<P extends AnilistProfile>({
       },
     },
     token: ANILIST_TOKEN_ENDPOINT,
+    style: {
+      brandColor: "#3db4f2",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/AniList_logo.svg",
+    },
   };
   return config;
 }

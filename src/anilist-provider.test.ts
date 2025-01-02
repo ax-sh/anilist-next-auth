@@ -15,6 +15,10 @@ describe("Test Anilist NEXT-AUTH Provider", () => {
       type: "oauth",
       authorization: { url: "https://anilist.co/api/v2/oauth/authorize" },
       token: "https://anilist.co/api/v2/oauth/token",
+      style: {
+        brandColor: "#3db4f2",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/AniList_logo.svg",
+      },
     };
     expect(provider).toMatchObject(out);
   });
