@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### ⚙️ Miscellaneous Tasks
+
+- Update package.json and improve test structure
+- Format files before release
+
+## [0.15.0] - 2025-01-02
+
 ### 🐛 Bug Fixes
 
 - *(anilist-provider)* Add missing issuer field in config
@@ -11,6 +18,7 @@ All notable changes to this project will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - Format files before release
+- Add CHANGELOG
 
 ## [0.14.0] - 2025-01-02
 
