@@ -4,10 +4,21 @@ All notable changes to this project will be documented in this file.
 
 ## [unreleased]
 
+### 🚜 Refactor
+
+- *(anilist-provider)* Spread options in config object
+
+### ⚙️ Miscellaneous Tasks
+
+- Format files before release
+
+## [0.12.0] - 2025-01-02
+
 ### ⚙️ Miscellaneous Tasks
 
 - Add comment to ignore lint warning for tokens
 - Format files before release
+- Add CHANGELOG
 
 ## [0.11.0] - 2025-01-02
 
